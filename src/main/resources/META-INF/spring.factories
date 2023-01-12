@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.wusong.desensitization.config.DesensitizationAutoConfiguration
+com.wusong.cloudonlytraceid.config.CloudOnlyTraceIdAutoConfiguration

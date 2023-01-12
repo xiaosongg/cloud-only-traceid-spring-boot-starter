@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.wusong.desensitization.config.DesensitizationAutoConfiguration

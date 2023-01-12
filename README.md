@@ -69,6 +69,8 @@ public class DemoController {
     @GetMapping("/sms-tracer-id")
     public String hello(HttpServletRequest request) {
 
+        log.info("Request header with {}", request.getHeader("traceId"));
+        
         return serviceSampleClient.hello();
     }
 }
@@ -91,16 +93,19 @@ public class ServiceSampleController {
 
 @GetMapping("/hello")
 public String hello(HttpServletRequest request) {
-log.info("Received new request for hello api.");
-
+    log.info("Received new request for hello api.");
+    log.info("Request header with {}", request.getHeader("traceId"));
     return "Hello";
 }
 }
 ```
 
 ### 效果图
+- 调起方服务
+![效果](/doc/tuyi.png)
 
-
+- 被调用的服务
+![效果](/doc/tuer.png)
 
 # 参与贡献
 

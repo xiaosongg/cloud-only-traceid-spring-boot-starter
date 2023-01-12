@@ -1,5 +1,6 @@
 package com.wusong.cloudonlytraceid.config;
 
+import com.wusong.cloudonlytraceid.annos.ConditionalOnCloudOnlyTraceId;
 import com.wusong.cloudonlytraceid.filter.TraceIdFilter;
 import com.wusong.cloudonlytraceid.interceptor.FeignRequestExtend;
 import com.wusong.cloudonlytraceid.interceptor.TraceIdInterceptor;
@@ -16,6 +17,7 @@ import org.springframework.core.annotation.Order;
  * @description
  */
 @Configuration
+@ConditionalOnCloudOnlyTraceId
 @ConditionalOnProperty(value = "cloud.only.trace.enabled", havingValue = "true")
 public class CloudOnlyTraceIdAutoConfiguration {
 

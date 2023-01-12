@@ -1,2 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.wusong.cloudonlytraceid.config.EnabledCloudOnlyTraceIdAutoConfiguration,\
 com.wusong.cloudonlytraceid.config.CloudOnlyTraceIdAutoConfiguration
+
